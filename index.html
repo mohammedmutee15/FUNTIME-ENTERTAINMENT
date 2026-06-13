@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funtime Entertainment – Wedding & Event Decorators, Hyderabad</title>
+<meta name="description" content="Funtime Entertainment – Premium wedding ceremony, birthday, haldi & manjay decorations in Hyderabad. Call +91 9381473205.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #C9922A;
+    --gold-light: #F5E2B0;
+    --gold-pale: #FDF7EC;
+    --rose: #C0564A;
+    --rose-light: #F8EAE7;
+    --deep: #1A0F0A;
+    --dark: #2E1A11;
+    --mid: #7A5C48;
+    --text: #3D2713;
+    --muted: #8C7060;
+    --cream: #FAF5EE;
+    --white: #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── TOPBAR ── */
+  .topbar {
+    background: var(--deep);
+    color: var(--gold-light);
+    text-align: center;
+    padding: 9px 20px;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+  }
+  .topbar a { color: var(--gold-light); text-decoration: none; }
+  .topbar a:hover { color: #fff; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,252,245,0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e8d9c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 68px;
+  }
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .nav-logo {
+    width: 44px; height: 44px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .nav-logo svg { width: 24px; height: 24px; fill: #fff; }
+  .nav-brand-text { line-height: 1.2; }
+  .nav-brand-text span { display: block; }
+  .nav-brand-text .line1 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--dark); }
+  .nav-brand-text .line2 { font-size: 11px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
+  .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+  .nav-links a { text-decoration: none; color: var(--text); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold);
+    color: #fff !important;
+    padding: 9px 22px;
+    border-radius: 30px;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--dark) !important; color: #fff !important; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 70% 40%, rgba(201,146,42,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 80%, rgba(192,86,74,0.08) 0%, transparent 50%),
+      linear-gradient(160deg, #1A0F0A 0%, #2E1A11 55%, #3D2713 100%);
+  }
+  .hero-pattern {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L35 20 L50 20 L38 29 L43 44 L30 35 L17 44 L22 29 L10 20 L25 20Z' fill='%23C9922A'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+  }
+  .hero-text {}
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,146,42,0.15);
+    border: 1px solid rgba(201,146,42,0.4);
+    color: var(--gold-light);
+    font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+    padding: 6px 16px; border-radius: 30px; margin-bottom: 24px;
+  }
+  .hero-eyebrow::before { content: '✦'; color: var(--gold); }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+  .hero-title .accent { color: var(--gold); display: block; }
+  .hero-subtitle {
+    font-size: 17px; color: rgba(255,255,255,0.72); line-height: 1.8;
+    margin-bottom: 36px; max-width: 460px;
+  }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold);
+    color: #fff;
+    padding: 14px 32px; border-radius: 4px;
+    font-size: 15px; font-weight: 600;
+    text-decoration: none; display: inline-block;
+    transition: transform 0.2s, background 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .btn-primary:hover { background: #a97720; transform: translateY(-1px); }
+  .btn-outline {
+    border: 1.5px solid rgba(255,255,255,0.35);
+    color: #fff; padding: 14px 32px; border-radius: 4px;
+    font-size: 15px; font-weight: 500; text-decoration: none; display: inline-block;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--gold); background: rgba(201,146,42,0.1); }
+  .hero-stats {
+    display: flex; gap: 32px; margin-top: 44px;
+    padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.12);
+  }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 34px; color: var(--gold); display: block; font-weight: 700; }
+  .stat-label { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* Hero visual side */
+  .hero-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 12px;
+  }
+  .hv-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hv-card:first-child { grid-column: 1 / 3; }
+  .hv-inner {
+    padding: 28px 24px;
+    display: flex; flex-direction: column; align-items: flex-start;
+  }
+  .hv-icon {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: rgba(201,146,42,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 12px;
+  }
+  .hv-card:first-child .hv-inner { flex-direction: row; gap: 24px; align-items: center; }
+  .hv-card:first-child .hv-icon { width: 60px; height: 60px; font-size: 28px; flex-shrink: 0; }
+  .hv-title { font-family: 'Playfair Display', serif; font-size: 17px; color: #fff; font-weight: 600; margin-bottom: 4px; }
+  .hv-sub { font-size: 13px; color: rgba(255,255,255,0.5); }
+  .hv-badge {
+    position: absolute; top: 12px; right: 12px;
+    background: var(--gold); color: #fff;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 20px; font-weight: 600;
+  }
+
+  /* ── SECTION LAYOUT ── */
+  section { padding: 90px 40px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .section-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--gold); font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 14px;
+  }
+  .section-label::before { content: ''; width: 28px; height: 1.5px; background: var(--gold); display: block; }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 3.5vw, 44px);
+    font-weight: 700; color: var(--dark); line-height: 1.25; margin-bottom: 16px;
+  }
+  .section-sub { font-size: 16px; color: var(--muted); max-width: 540px; line-height: 1.8; }
+
+  /* ── SERVICES ── */
+  #services { background: #fff; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px; margin-top: 52px;
+  }
+  .service-card {
+    background: var(--cream);
+    border: 1px solid #e8d9c4;
+    border-radius: 12px;
+    padding: 36px 28px;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    cursor: pointer;
+    position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.1); border-color: #d4b88a; }
+  .service-card:hover::before { transform: scaleX(1); }
+  .sc-icon { font-size: 40px; margin-bottom: 20px; display: block; }
+  .sc-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--dark); margin-bottom: 10px; }
+  .sc-desc { font-size: 14px; color: var(--muted); line-height: 1.75; }
+  .sc-arrow {
+    margin-top: 20px; color: var(--gold); font-size: 20px; display: inline-block;
+    transition: transform 0.2s;
+  }
+  .service-card:hover .sc-arrow { transform: translateX(4px); }
+
+  /* ── WHY US ── */
+  #why { background: var(--cream); }
+  .why-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 52px; align-items: center;
+  }
+  .why-visual {
+    background: linear-gradient(140deg, var(--dark), #4a2818);
+    border-radius: 16px; padding: 40px 36px; color: #fff;
+    position: relative; overflow: hidden;
+  }
+  .why-visual::after {
+    content: '✦';
+    position: absolute; bottom: -20px; right: -20px;
+    font-size: 120px; color: rgba(201,146,42,0.08);
+  }
+  .why-quote {
+    font-family: 'Playfair Display', serif; font-size: 26px; font-style: italic;
+    color: #fff; line-height: 1.5; margin-bottom: 28px; position: relative; z-index: 1;
+  }
+  .why-quote::before { content: '\201C'; font-size: 60px; color: var(--gold); line-height: 0; vertical-align: -0.4em; margin-right: 4px; }
+  .why-attrs { display: flex; flex-direction: column; gap: 14px; position: relative; z-index: 1; }
+  .why-attr {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+    padding: 12px 16px; border-radius: 8px;
+  }
+  .why-attr-icon { font-size: 22px; flex-shrink: 0; }
+  .why-attr-text { font-size: 14px; color: rgba(255,255,255,0.85); }
+  .why-attr-text strong { display: block; font-size: 15px; color: #fff; margin-bottom: 2px; }
+
+  .why-points { display: flex; flex-direction: column; gap: 28px; }
+  .why-point { display: flex; gap: 18px; align-items: flex-start; }
+  .wp-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; font-weight: 700; color: var(--gold-light); line-height: 1;
+    flex-shrink: 0; min-width: 44px;
+  }
+  .wp-body {}
+  .wp-title { font-size: 17px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+  .wp-desc { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+  /* ── GALLERY ── */
+  #gallery { background: #fff; }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 220px 220px;
+    gap: 12px; margin-top: 48px;
+  }
+  .gallery-cell {
+    background: var(--cream);
+    border-radius: 10px; overflow: hidden; position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .gallery-cell:first-child { grid-row: 1 / 3; }
+  .gallery-inner {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background: linear-gradient(160deg, #f5e8d4, #e8cfb0);
+    text-align: center; padding: 20px; gap: 10px;
+    transition: transform 0.3s;
+  }
+  .gallery-cell:hover .gallery-inner { transform: scale(1.02); }
+  .gallery-icon { font-size: 48px; }
+  .gallery-label {
+    font-family: 'Playfair Display', serif; font-size: 17px;
+    color: var(--dark); font-weight: 600;
+  }
+  .gallery-overlay {
+    position: absolute; inset: 0; background: rgba(30,15,5,0.0);
+    display: flex; align-items: flex-end; padding: 18px;
+    transition: background 0.3s;
+  }
+  .gallery-cell:hover .gallery-overlay { background: rgba(30,15,5,0.35); }
+  .gallery-tag {
+    background: var(--gold); color: #fff; font-size: 12px;
+    padding: 5px 14px; border-radius: 20px; opacity: 0; transform: translateY(6px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .gallery-cell:hover .gallery-tag { opacity: 1; transform: translateY(0); }
+
+  /* ── TESTIMONIALS ── */
+  #reviews { background: var(--cream); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+  .review-card {
+    background: #fff;
+    border: 1px solid #e8d9c4; border-radius: 12px; padding: 28px 24px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .review-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+  .review-stars { color: var(--gold); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+  .review-text { font-size: 14px; color: var(--text); line-height: 1.8; margin-bottom: 20px; font-style: italic; }
+  .review-author { display: flex; align-items: center; gap: 12px; }
+  .review-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), #a97720);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 15px; flex-shrink: 0;
+  }
+  .review-name { font-size: 14px; font-weight: 600; color: var(--dark); }
+  .review-event { font-size: 12px; color: var(--muted); }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--dark); color: #fff; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  #contact .section-title { color: #fff; }
+  #contact .section-sub { color: rgba(255,255,255,0.6); }
+  .contact-items { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+  .contact-item {
+    display: flex; align-items: flex-start; gap: 16px;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    padding: 18px 20px; border-radius: 10px;
+  }
+  .ci-icon {
+    font-size: 24px; flex-shrink: 0;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: rgba(201,146,42,0.2);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ci-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 2px; }
+  .ci-value { font-size: 15px; color: #fff; font-weight: 500; }
+  .ci-value a { color: var(--gold-light); text-decoration: none; }
+  .ci-value a:hover { color: var(--gold); }
+
+  .contact-cta-box {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px; padding: 40px 36px; text-align: center;
+  }
+  .ccb-icon { font-size: 52px; margin-bottom: 16px; display: block; }
+  .ccb-title { font-family: 'Playfair Display', serif; font-size: 26px; color: #fff; font-weight: 700; margin-bottom: 10px; }
+  .ccb-sub { font-size: 14px; color: rgba(255,255,255,0.55); margin-bottom: 28px; line-height: 1.7; }
+  .btn-gold {
+    background: var(--gold); color: #fff;
+    padding: 14px 36px; border-radius: 4px;
+    font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block;
+    transition: background 0.2s, transform 0.2s; letter-spacing: 0.02em;
+  }
+  .btn-gold:hover { background: #a97720; transform: translateY(-1px); }
+  .btn-wa {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25D366; color: #fff;
+    padding: 13px 28px; border-radius: 4px;
+    font-size: 15px; font-weight: 600; text-decoration: none;
+    margin-top: 14px; transition: background 0.2s; letter-spacing: 0.01em;
+  }
+  .btn-wa:hover { background: #1da851; }
+  .btn-wa svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
+
+  /* ── MAP ── */
+  #map-section { padding: 0; }
+  #map-section iframe { width: 100%; height: 400px; border: 0; display: block; filter: grayscale(30%); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--deep); color: rgba(255,255,255,0.5);
+    padding: 36px 40px; text-align: center;
+  }
+  .footer-logo {
+    font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold-light);
+    font-weight: 700; margin-bottom: 8px;
+  }
+  .footer-sub { font-size: 13px; margin-bottom: 18px; }
+  .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+  .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { font-size: 12px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; }
+
+  /* ── FLOATING CALL BUTTON ── */
+  .float-call {
+    position: fixed; bottom: 28px; right: 28px; z-index: 200;
+    background: var(--gold); color: #fff;
+    width: 58px; height: 58px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 24px rgba(201,146,42,0.5);
+    text-decoration: none; font-size: 24px;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .float-call:hover { transform: scale(1.08); background: #a97720; }
+
+  /* ── DIVIDER ── */
+  .ornament {
+    text-align: center; padding: 12px 0;
+    color: var(--gold); letter-spacing: 8px; font-size: 14px; opacity: 0.5;
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    section { padding: 64px 20px; }
+    .hero-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
+    .hero-visual { display: none; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .gallery-cell:first-child { grid-row: auto; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+    footer { padding: 28px 20px; }
+  }
+  @media (max-width: 500px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-wrap: wrap; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  📞 Call us: <a href="tel:+919381473205">+91 9381473205</a> &nbsp;|&nbsp; 📍 Hyderabad, Telangana
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">
+    <div class="nav-logo">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16z"/></svg>
+    </div>
+    <div class="nav-brand-text">
+      <span class="line1">Funtime Entertainment</span>
+      <span class="line2">Event Decorators · Hyderabad</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Premium Event Decorators · Hyderabad</div>
+      <h1 class="hero-title">
+        Every Moment Deserves
+        <span class="accent">Pure Magic</span>
+      </h1>
+      <p class="hero-subtitle">From intimate haldi ceremonies to grand wedding mandaps — Funtime Entertainment transforms your celebrations into memories that last a lifetime.</p>
+      <div class="hero-actions">
+        <a href="tel:+919381473205" class="btn-primary">📞 Call to Book</a>
+        <a href="#services" class="btn-outline">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Events Done</span>
+        </div>
+        <div>
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label">Avg Rating</span>
+        </div>
+        <div>
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Visual Cards -->
+    <div class="hero-visual">
+      <div class="hv-card">
+        <div class="hv-inner">
+          <div class="hv-icon">💍</div>
+          <div>
+            <div class="hv-title">Wedding Ceremony Decoration</div>
+            <div class="hv-sub">Mandaps, florals, stage backdrops & full venue dressing</div>
+          </div>
+        </div>
+        <div class="hv-badge">Most Popular</div>
+      </div>
+      <div class="hv-card">
+        <div class="hv-inner">
+          <div class="hv-icon">🎂</div>
+          <div class="hv-title">Birthday Parties</div>
+          <div class="hv-sub">Themes & balloons</div>
+        </div>
+      </div>
+      <div class="hv-card">
+        <div class="hv-inner">
+          <div class="hv-icon">🌼</div>
+          <div class="hv-title">Haldi & Manjay</div>
+          <div class="hv-sub">Traditional ceremony decor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-label">Our Services</div>
+    <h2 class="section-title">Celebrations We Craft<br>With Passion</h2>
+    <p class="section-sub">Each event is planned from the heart, executed with precision, and delivered with a personal touch only Funtime Entertainment can offer.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="sc-icon">💍</span>
+        <div class="sc-title">Wedding Ceremony Decoration</div>
+        <p class="sc-desc">Grand mandap setups, floral arches, stage backdrops, entrance decor, and complete venue transformation for your perfect wedding day in Hyderabad.</p>
+        <span class="sc-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <span class="sc-icon">🎂</span>
+        <div class="sc-title">Birthday Party Decoration</div>
+        <p class="sc-desc">Themed birthday setups with balloon sculptures, photo backdrops, table centrepieces, and custom signage — for kids and adults alike.</p>
+        <span class="sc-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <span class="sc-icon">🌸</span>
+        <div class="sc-title">Haldi Ceremony</div>
+        <p class="sc-desc">Vibrant marigold and rose arrangements, traditional pots, jaimala setups, and joyful colour-drenched decor for the most cherished pre-wedding ritual.</p>
+        <span class="sc-arrow">→</span>
+      </div>
+      <div class="service-card">
+        <span class="sc-icon">🥁</span>
+        <div class="sc-title">Manjay Ceremony</div>
+        <p class="sc-desc">Beautifully dressed manjay seats, floral torans, draping, and traditional ornamental setups that honour the ritual with elegance and warmth.</p>
+        <span class="sc-arrow">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <div class="section-label">Why Funtime</div>
+    <h2 class="section-title">The Difference That Shows<br>in Every Detail</h2>
+
+    <div class="why-grid">
+      <div class="why-visual">
+        <div class="why-quote">We don't just decorate spaces — we paint emotions.</div>
+        <div class="why-attrs">
+          <div class="why-attr">
+            <span class="why-attr-icon">🌺</span>
+            <div class="why-attr-text">
+              <strong>Fresh Florals Only</strong>
+              Premium seasonal blooms sourced fresh for every event
+            </div>
+          </div>
+          <div class="why-attr">
+            <span class="why-attr-icon">🤝</span>
+            <div class="why-attr-text">
+              <strong>Dedicated Coordinator</strong>
+              One point of contact from booking to teardown
+            </div>
+          </div>
+          <div class="why-attr">
+            <span class="why-attr-icon">⚡</span>
+            <div class="why-attr-text">
+              <strong>On-time Setup</strong>
+              Zero delays, zero stress on your big day
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-points">
+        <div class="why-point">
+          <div class="wp-num">01</div>
+          <div class="wp-body">
+            <div class="wp-title">Hyderabad Specialists</div>
+            <p class="wp-desc">Born and rooted in the city, we understand local traditions — from Telangana wedding customs to modern fusion styles — better than anyone.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="wp-num">02</div>
+          <div class="wp-body">
+            <div class="wp-title">Custom-Designed, Never Template</div>
+            <p class="wp-desc">Every decor is conceived specifically for your event. We sit with you, listen to your vision, and bring it to life uniquely — no copy-paste setups.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="wp-num">03</div>
+          <div class="wp-body">
+            <div class="wp-title">Transparent Pricing</div>
+            <p class="wp-desc">No hidden charges, no surprises. You get a clear, itemised quote upfront — and we stick to it. Budget respect is part of our promise.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="wp-num">04</div>
+          <div class="wp-body">
+            <div class="wp-title">500+ Happy Families</div>
+            <p class="wp-desc">Over eight years, we've had the privilege of celebrating alongside hundreds of Hyderabad families. Their joy is our greatest portfolio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:#fff;">
+  <div class="container">
+    <div class="section-label">Gallery</div>
+    <h2 class="section-title">A Glimpse of Our Work</h2>
+    <p class="section-sub">Real events, real emotions. Each setup is a labour of love.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-cell">
+        <div class="gallery-inner" style="background: linear-gradient(160deg,#fce8e6,#f4c0b0);">
+          <div class="gallery-icon">💍</div>
+          <div class="gallery-label">Wedding Ceremony</div>
+          <p style="font-size:13px;color:#7a5c48;margin-top:4px;text-align:center;">Grand mandap · Floral arch · Stage backdrop</p>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-tag">Featured</div></div>
+      </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner" style="background: linear-gradient(160deg,#fff3d0,#f5d680);">
+          <div class="gallery-icon">🌸</div>
+          <div class="gallery-label">Haldi Setup</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-tag">View More</div></div>
+      </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner" style="background: linear-gradient(160deg,#e8f4e8,#b0d8b0);">
+          <div class="gallery-icon">🥁</div>
+          <div class="gallery-label">Manjay Ceremony</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-tag">View More</div></div>
+      </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner" style="background: linear-gradient(160deg,#e6eefa,#b0c8f0);">
+          <div class="gallery-icon">🎂</div>
+          <div class="gallery-label">Birthday Party</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-tag">View More</div></div>
+      </div>
+      <div class="gallery-cell" style="background: linear-gradient(160deg,#fdeaff,#e8b0f0);">
+        <div class="gallery-inner" style="background: linear-gradient(160deg,#fdeaff,#e8b0f0);">
+          <div class="gallery-icon">🎊</div>
+          <div class="gallery-label">Special Events</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-tag">View More</div></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="https://share.google/CnK4rb7qdsyXyTetv" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;">View Full Portfolio on Google ↗</a>
+    </div>
+  </div>
+</section>
+
+<div class="ornament">✦ ✦ ✦ ✦ ✦</div>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-label">Testimonials</div>
+    <h2 class="section-title">Words From Our Families</h2>
+    <p class="section-sub">Every review is a story of a moment we helped make unforgettable.</p>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The wedding decor was absolutely breathtaking! The mandap was exactly what we dreamed of — full of flowers and so much detail. Funtime Entertainment exceeded every expectation."</p>
+        <div class="review-author">
+          <div class="review-avatar">SR</div>
+          <div>
+            <div class="review-name">Sameera Reddy</div>
+            <div class="review-event">Wedding — Hyderabad, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The haldi ceremony setup was so vibrant and traditional. They understood exactly what we wanted and brought so much colour and joy. Truly professional team!"</p>
+        <div class="review-author">
+          <div class="review-avatar">PA</div>
+          <div>
+            <div class="review-name">Priya Agarwal</div>
+            <div class="review-event">Haldi Ceremony — 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"My daughter's birthday was a fairy tale! The balloon decor, the themed backdrop, the whole setup was magical. Every guest was asking for their contact. Highly recommended!"</p>
+        <div class="review-author">
+          <div class="review-avatar">MK</div>
+          <div>
+            <div class="review-name">Mohammed Khalid</div>
+            <div class="review-event">Birthday Party — 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="https://share.google/CnK4rb7qdsyXyTetv" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;">Read All Reviews on Google ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label" style="color:var(--gold-light);">Get In Touch</div>
+        <h2 class="section-title">Let's Plan Your<br>Dream Event</h2>
+        <p class="section-sub">Reach out to us and we'll get back to you within hours. Let's discuss your vision and create something magical together.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone / WhatsApp</div>
+              <div class="ci-value"><a href="tel:+919381473205">+91 9381473205</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Address</div>
+              <div class="ci-value">20-5-511/1, Shah Ali Banda Rd, Syed Ali Chabutra, Shakkar Gunj, Aliabad, Hyderabad, Telangana 500065</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🗺️</div>
+            <div>
+              <div class="ci-label">Find Us Online</div>
+              <div class="ci-value"><a href="https://share.google/CnK4rb7qdsyXyTetv" target="_blank" rel="noopener">View on Google Maps ↗</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">⏰</div>
+            <div>
+              <div class="ci-label">Working Hours</div>
+              <div class="ci-value">Daily: 9:00 AM – 9:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta-box">
+        <span class="ccb-icon">🎉</span>
+        <div class="ccb-title">Ready to Celebrate?</div>
+        <p class="ccb-sub">Call us now or send a WhatsApp message with your event date and type — we'll respond with ideas and a free quote within a few hours.</p>
+        <a href="tel:+919381473205" class="btn-gold">📞 Call +91 9381473205</a>
+        <br>
+        <a href="https://wa.me/919381473205?text=Hello%20Funtime%20Entertainment!%20I%20would%20like%20to%20enquire%20about%20event%20decoration." class="btn-wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div id="map-section">
+  <iframe
+    src="https://www.google.com/maps?q=20-5-511/1,+Shah+Ali+Banda+Rd,+Syed+Ali+Chabutra,+Hyderabad,+Telangana+500065&output=embed"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    title="Funtime Entertainment Location">
+  </iframe>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">✦ Funtime Entertainment ✦</div>
+  <div class="footer-sub">Premium Event Decorators · Hyderabad, Telangana</div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="https://share.google/CnK4rb7qdsyXyTetv" target="_blank" rel="noopener">Google Business</a>
+  </div>
+  <div class="footer-copy">
+    © 2025 Funtime Entertainment · All rights reserved · 20-5-511/1, Shah Ali Banda Rd, Hyderabad 500065
+  </div>
+</footer>
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:+919381473205" class="float-call" aria-label="Call Funtime Entertainment">📞</a>
+
+</body>
+</html>
